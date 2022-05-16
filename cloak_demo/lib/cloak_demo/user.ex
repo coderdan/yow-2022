@@ -5,7 +5,7 @@ defmodule CloakDemo.User do
   schema "users" do
     field :email, CloakDemo.Encrypted.Binary
     field :first_name, CloakDemo.Encrypted.Binary
-    field :first_name_hash #, Cloak.Ecto.SHA256
+    field :first_name_hash, Cloak.Ecto.SHA256
     field :dob, CloakDemo.Encrypted.Binary
     field :medicare, CloakDemo.Encrypted.Binary
     field :medicare_hash, Cloak.Ecto.SHA256
